@@ -16,3 +16,7 @@ Dùng để đọc lên khi khở động chương trình lần đầu tiên.
 Date: 10/06/2014.
 	- Hoàn tất bản demo cho khách hàng.
 	- v1.0
+	- Còn các thông báo cần có khi kết nối:
+		+ Thông báo change pass thành công.
+		+ Thông báo mất kết nối.
+		+ Sửa con trỏ trong EditText change pass.
