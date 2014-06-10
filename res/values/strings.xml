@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BluetoothFourButton</string>
+    <string name="action_settings">Change pass</string>
+
+
+
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+    <string name="scanning">scanning for devices #8230;</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_activity_device_list">DeviceListActivity</string>
+    <string name="connect">Connect a device</string>
+    <string name="connect_to">Connect to</string>
+    <string name="edit_name">Edit name</string>
+
+
+
+    <string name="user">UserName:</string>
+    <string name="pass">PassWord:</string>
+    <string name="submit">Connect</string>
+
+    <string name="login">LOGIN</string>
+    <string name="reset_pass">RESET PASSWORD</string>
+
+    <string name="top">TOP</string>
+    <string name="left">LEFT</string>
+    <string name="right">RIGHT</string>
+    <string name="bottom">BOTTOM</string>
+
+    <string name="pass_old">PassWord Old:</string>
+    <string name="pass_old_1">Password old</string>
+    <string name="pass_new">PassWord New:</string>
+    <string name="pass_new_1">Password new</string>
+    <string name="pass_new_again">PassWord Again:</string>
+    <string name="pass_new_again_1">Password new again</string>
+    <string name="change_pass">CHANGE PASSWORD</string>
+    <string name="input_name">input name</string>
+
+
+
+    <string name="device1">Device 1</string>
+    <string name="device2">Device 2</string>
+    <string name="device3">Device 3</string>
+    <string name="device4">Device 4</string>
+    <string name="edit_name_button">OK</string>
+
+
+
+</resources>
