@@ -20,3 +20,5 @@ Date: 10/06/2014.
 		+ Thông báo change pass thành công.
 		+ Thông báo mất kết nối.
 		+ Sửa con trỏ trong EditText change pass.
+Date: 11/06/2014.
+	- Thằng Châu sai code
