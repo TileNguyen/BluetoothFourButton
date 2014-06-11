@@ -320,10 +320,12 @@ public class MyActivity extends Activity implements CompoundButton.OnCheckedChan
                         ParseByteArray.parseByte(str);
 
                         /* Hiển thị Toast khi change password. */
-                        if(str.equals("ok") || str.equals("er")){
-//                            Toast.makeText(getApplication(), str, 1).show();
+                        if(str.equals("ok")){
+                            savePreferences(passWord_New);
                         }
-                        Toast.makeText(getApplication(), str, 1).show();
+                        else if(str.equals("er")){
+                            Toast.makeText(getBaseContext()," error ", Toast.LENGTH_SHORT).show();
+                        }
 
                     }
                     break;
@@ -743,7 +745,19 @@ public class MyActivity extends Activity implements CompoundButton.OnCheckedChan
 
     }
 
-
+    public boolean savePreferences(String str) {
+        SharedPreferences sp = getSharedPreferences(
+                MY_PREFERENCES, Context.MODE_PRIVATE);
+        SharedPreferences.Editor ed = sp.edit();
+        ed.putString("passW", str);
+        if (ed.commit()) {
+            passWord = str;
+            ed.commit();
+            return true;
+        }
+        Log.d("PASS CHANGE", str);
+        return false;
+    }
 
 
 

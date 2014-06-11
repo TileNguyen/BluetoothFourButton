@@ -3,94 +3,68 @@
                 android:id="@+id/RelativeLayout1"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:layout_marginBottom="20dp"
                 android:orientation="vertical" >
-
-    <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="19dp"
-            android:layout_toLeftOf="@+id/edt_pass_new_again"
-            android:gravity="center_vertical"
-            android:text="@string/pass_old"
-            android:visibility="gone"
-            android:textSize="15sp" />
-
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Change PassWord"
-            android:textSize="30dp"
+            android:textSize="20dp"
             android:id="@+id/textView"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="15dp"/>
     <EditText
             android:id="@+id/ed_old_pass"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:background="@drawable/round"
-            android:gravity="center_vertical"
             android:hint="@string/pass_old_1"
             android:inputType="textPassword"
             android:maxLength="8"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:textSize="30dp"/>
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"/>
 
     <EditText
             android:id="@+id/ed_new_pass"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:background="@drawable/round"
             android:ems="10"
-            android:gravity="center_vertical"
             android:hint="@string/pass_new_1"
             android:inputType="textPassword"
             android:maxLength="8"
             android:layout_marginBottom="10dp"
-            android:textSize="30dp"/>
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"/>
 
     <EditText
             android:id="@+id/ed_new_pass_again"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:background="@drawable/round"
             android:ems="10"
-            android:gravity="center_vertical"
             android:hint="@string/pass_new_again_1"
             android:inputType="textPassword"
             android:maxLength="8"
             android:layout_marginBottom="10dp"
-            android:textSize="30dp"/>
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:textSize="20dp"/>
 
     <Button
             android:id="@+id/btn_edit_name"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
+            android:gravity="center_vertical|center_horizontal"
             android:layout_gravity="center_horizontal|center_vertical"
             android:text="@string/change_pass"/>
-
-    <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:text="@string/pass_new_again"
-            android:visibility="gone"
-            android:textSize="15sp"/>
-
-    <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:text="@string/pass_new"
-            android:visibility="gone"
-            android:textSize="15sp"/>
 
 
 </LinearLayout>

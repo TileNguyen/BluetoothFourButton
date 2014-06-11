@@ -58,25 +58,12 @@ public class ChangePassActivity extends Activity {
                 if (MyActivity.mConnectBluetoothFourButton.getState() == ConnectBluetoothFourButton.STATE_CONNECTED) {
                     // Kiểm tra password.
                     if (checkPass(_old, _new, _newAgain)) {
+
+                        MyActivity.passWord_New = _new;
                         // Send password new.
 						MyActivity.sendMessages("p" + MyActivity.passWord
 								+ _new + "#");
-                        // if (MainActivity.n == 1) {
-                        // txt_thong_bao.setText("Reset password error!");
-                        // } else if (MainActivity.n == 2) {
-                        if (savePreferences(_new)) {
-//                            txt_thong_bao.setText("Reset password successful!");
-//                            try {
-//                                Thread.sleep(2000);
-//                            } catch (InterruptedException e) {
-//                                // TODO Auto-generated catch block
-//                                e.printStackTrace();
-//                            }
                             finish();
-                        } else {
-                            Toast.makeText(getApplicationContext(), "Not save",
-                                    Toast.LENGTH_SHORT).show();
-                        }
                     }
                     // }
                     else {
@@ -141,19 +128,19 @@ public class ChangePassActivity extends Activity {
 
 
 
-    public boolean savePreferences(String str) {
-        SharedPreferences sp = getSharedPreferences(
-                MyActivity.MY_PREFERENCES, Context.MODE_PRIVATE);
-        SharedPreferences.Editor ed = sp.edit();
-        ed.putString("passW", str);
-        if (ed.commit()) {
-            MyActivity.passWord = str;
-            ed.commit();
-            return true;
-        }
-        Log.d("PASS CHANGE", str);
-        return false;
-    }
+//    public boolean savePreferences(String str) {
+//        SharedPreferences sp = getSharedPreferences(
+//                MyActivity.MY_PREFERENCES, Context.MODE_PRIVATE);
+//        SharedPreferences.Editor ed = sp.edit();
+//        ed.putString("passW", str);
+//        if (ed.commit()) {
+//            MyActivity.passWord = str;
+//            ed.commit();
+//            return true;
+//        }
+//        Log.d("PASS CHANGE", str);
+//        return false;
+//    }
 
 
 
