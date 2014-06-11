@@ -41,6 +41,7 @@ public class MyActivity extends Activity implements CompoundButton.OnCheckedChan
     byte[] readByte;
 
     public static String passWord;
+    public static String passWord_New;
     public static String MY_PREFERENCES = "myPR";
 
 
@@ -317,6 +318,12 @@ public class MyActivity extends Activity implements CompoundButton.OnCheckedChan
                         }
 
                         ParseByteArray.parseByte(str);
+
+                        /* Hiển thị Toast khi change password. */
+                        if(str.equals("ok") || str.equals("er")){
+//                            Toast.makeText(getApplication(), str, 1).show();
+                        }
+                        Toast.makeText(getApplication(), str, 1).show();
 
                     }
                     break;

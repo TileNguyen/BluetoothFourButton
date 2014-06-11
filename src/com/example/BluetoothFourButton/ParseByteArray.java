@@ -9,9 +9,7 @@ package com.example.BluetoothFourButton;
  */
 public class ParseByteArray {
 
-
-
-    public static void parseByte(String str){
+public static void parseByte(String str){
 
         if(str.charAt(0) == 'o'){
             if(str.charAt(1) != 'k'){
@@ -128,7 +126,7 @@ public class ParseByteArray {
                     MyActivity.tgbt_4.setChecked(true);
                 }else if(b == 'f'){
                     MyActivity.tgbt_4.setChecked(false);
-                }
+            }
                 break;
         }
     }

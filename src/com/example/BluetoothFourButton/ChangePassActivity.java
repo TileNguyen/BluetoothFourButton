@@ -4,6 +4,9 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -11,6 +14,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.example.ConnectBluetooth.ConnectBluetoothFourButton;
+
+import java.io.UnsupportedEncodingException;
+import java.util.logging.LogRecord;
 
 /**
  * Created with IntelliJ IDEA.
@@ -149,6 +155,38 @@ public class ChangePassActivity extends Activity {
         return false;
     }
 
+
+
+//    Handler handler = new Handler(Looper.myLooper()) {
+//        @Override
+//        public void handleMessage(Message msg) {
+//            super.handleMessage(msg);
+//
+//            switch(msg.what){
+//                case MyActivity.MESSAGE_READ:
+//                    byte[] readByte = (byte[]) msg.obj;
+//
+//                    if (readByte.length > 0) {
+//
+//                        // new MyAsynTask().execute();
+//
+//                        String str = "";
+//                        try {
+//                            str = new String(readByte, "US-ASCII");
+//                            // Log.d("DATA", str+"");
+//                        } catch (UnsupportedEncodingException e) {
+//                            // TODO Auto-generated catch block
+//                            e.printStackTrace();
+//                        }
+//
+//                        ParseByteArray.parseByte(str);
+//
+////                        Toast.makeText(getApplication(),str,1).show();
+//                    }
+//                    break;
+//            }
+//        }
+//    };
 
 
 }
